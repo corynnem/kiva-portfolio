@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'whoAreU';
+    src: url('../assets/fonts/Snake.ttf');
+  }
+
+  .who{
+      font-family: 'whoAreU';
+      color: white;
+      font-size: 4vh;
+  }
+
+  #who2 {
+    margin-top: -7vh;
+    margin-right: 2%;
+    color: black
+  }
+
+ .about {
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 10%;
+ }

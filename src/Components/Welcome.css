@@ -1,0 +1,84 @@
+.blog-post-teaser {
+    position: relative;
+    padding: 30% 0;
+  }
+  
+  .blog-post-teaser .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .blog-post-teaser .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blog-post-teaser figure {
+    position: relative;
+    padding: 30% 0;
+  }
+  
+  .blog-post-teaser figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .blog-post-teaser img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .invert:hover {
+    filter: invert(100%) ;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.gridWhole :before {
+  transition: all .5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  transform: scale(0);
+  }
+
+
+.gridWhole li:hover:before {
+  opacity: .5;
+  transform: scale(1);
+}
+
+
+.gridWhole li:after {
+  transition: all .6s ease .2s;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid #aaa;
+  background: #000;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.gridWhole li:hover:after {
+  opacity: .35;
+  transform: scale(1);
+}

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'KIVA';
+    src: url('../../assets/fonts/Moranke.ttf');
+  }
+
+  #font{
+      font-family: 'KIVA';
+      text-decoration: none;
+      font-size: 8vh;
+      color: transparent;
+      -webkit-text-stroke-width: 1px; 
+      -webkit-text-stroke-color: white; 
+      margin-left: 10vw;
+      margin-right: 10vw;
+  }
+  .nav{
+    color: 'white';
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: white;
+  }
+  header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  
+    box-shadow: 5px -1px 12px -5px grey;
+    color: 'dark-grey';
+}
