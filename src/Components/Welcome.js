@@ -3,7 +3,32 @@ import APIURL from '../helpers/environment';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import Photo1 from '../assets/kiva-photos/666Flags.jpg'
+import Photo2 from '../assets/kiva-photos/april.jpg'
+import Photo3 from '../assets/kiva-photos/bleach.jpg'
+import Photo4 from '../assets/kiva-photos/chiefKelly.jpeg'
+import Photo5 from '../assets/kiva-photos/agal.jpg'
+import Photo6 from '../assets/kiva-photos/collage.jpeg'
+import Photo7 from '../assets/kiva-photos/december.png'
+import Photo8 from '../assets/kiva-photos/DTnob.jpg'
+import Photo9 from '../assets/kiva-photos/equinox.jpg'
+import Photo10 from '../assets/kiva-photos/espy.jpg'
+import Photo11 from '../assets/kiva-photos/fashionShow.png'
+import Photo12 from '../assets/kiva-photos/agal.jpg'
+import Photo13 from '../assets/kiva-photos/agal.jpg'
+import Photo14 from '../assets/kiva-photos/agal.jpg'
+import Photo15 from '../assets/kiva-photos/agal.jpg'
+import Photo16 from '../assets/kiva-photos/agal.jpg'
+import Photo17 from '../assets/kiva-photos/agal.jpg'
+import Photo18 from '../assets/kiva-photos/agal.jpg'
+import Photo19 from '../assets/kiva-photos/agal.jpg'
+import Photo20 from '../assets/kiva-photos/agal.jpg'
+import Photo21 from '../assets/kiva-photos/agal.jpg'
+import Photo22 from '../assets/kiva-photos/agal.jpg'
+import Photo23 from '../assets/kiva-photos/agal.jpg'
+import Photo24 from '../assets/kiva-photos/agal.jpg'
+import Photo25 from '../assets/kiva-photos/agal.jpg'
+import Photo26 from '../assets/kiva-photos/agal.jpg'
 import './Welcome.css'
 
 
@@ -50,9 +75,18 @@ const Welcome = (props) => {
 
 
 const pictures = [ 
-        'https://64.media.tumblr.com/6d55741525fbeb59a5f27e60146eaf85/f95a180f10364be1-46/s500x750/5b53a0b5715b39e387bfab6b76d28e8bfca76183.png',
-        'https://64.media.tumblr.com/30e927e928d0857307c9b7f992670e76/a59e192cd26e3cab-9a/s500x750/8f90fb2ed3625e4be4dacd93c66b6b30bedfe0d7.jpg',
-        'https://64.media.tumblr.com/a229e52160b998fa809722a6c4be2e6b/cb05468ff38cbf44-e7/s500x750/61c87f5c947b1f42e88c02ab22e82ee0939c027e.jpg',
+  Photo1,
+  Photo3,  
+  Photo4,
+  Photo5,         'https://64.media.tumblr.com/a229e52160b998fa809722a6c4be2e6b/cb05468ff38cbf44-e7/s500x750/61c87f5c947b1f42e88c02ab22e82ee0939c027e.jpg',
+  Photo6,
+  Photo7,
+  Photo8,
+  Photo9,
+  Photo10,
+  Photo2,
+  Photo2,
+  Photo2,
         'https://64.media.tumblr.com/fd81c870c49d4019cf0fdb532d320e52/tumblr_pmfbabB0cI1wm7nh6o1_1280.png',
         'https://64.media.tumblr.com/b761f296e98f6e0ed2540de0680e47e3/tumblr_pqn8k0IpDt1vukgf0_500.jpg',
         'https://64.media.tumblr.com/8e574ee2b687ded7dcd1525f09e8c8a8/tumblr_pqn8k0To6t1vukgf0_500.jpg',
@@ -98,35 +132,47 @@ const photoStyles = {
     height: '18vh',
     // filter: 'invert(100%)'
     marginLeft: '1vw',
-    marginTop: '1vh'
+    marginTop: '1vh',
+    display: 'block',
 }
  
-
+const photoGridStyles = {
+marginLeft: '10%',
+marginRight: '10%'
+}
 const altPhotoStyles = {
   marginLeft: '1vw',
   height: '18vh',
   marginTop: '1vh',
+  display: 'block',
+  alignItems: 'right'
+ 
 }
 const altAltPhotoStyles = {
   marginLeft: '1vw',
   height: '18vh',
-  marginTop: '1vh'
+  marginTop: '1vh',
+  display: 'block',
+
 }
 const altAltAltPhotoStyles = {
   height: '18vh',
   marginLeft: '1vw',
   marginTop: '1vh',
+  display: 'block',
+
+ 
 }
 
 return(
-   <div>
-     <div className={classes.root}>
+   <div style={photoGridStyles}>
+     <div className={classes.root} >
       <Grid container style={{width: '85%', marginLeft: '10%', marginRight: '10%'}}>
         <Grid item xs={3.5}>
               <img src={pictures[0]} style={altAltAltPhotoStyles} />
         </Grid>
         <Grid item xs={3.5} >
-          <img src={pictures[1]} style={altAltPhotoStyles}/>
+          <img src={pictures[5]} style={altAltPhotoStyles}/>
         </Grid>
         <Grid item xs={3.5}>
          <img src={pictures[2]} style={altPhotoStyles}/>
@@ -138,7 +184,7 @@ return(
             <img src={pictures[4]} style={photoStyles}/>
           </Grid>
           <Grid item xs={3.5}>
-            <img src={pictures[5]} style={photoStyles}/>
+            <img src={pictures[2]} style={photoStyles}/>
           </Grid>
           <Grid item xs={3.5}>
           <img src={pictures[18]} style={photoStyles}/> 
@@ -199,6 +245,39 @@ return(
         </Grid>
         <Grid item xs={3.5}>
           <img src={pictures[25]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[26]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[27]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[28]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[29]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[30]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[31]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[32]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[33]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[34]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[35]} style={photoStyles}/> 
+        </Grid>
+        <Grid item xs={3.5}>
+          <img src={pictures[36]} style={photoStyles}/> 
         </Grid>
       </Grid>
     </div>
